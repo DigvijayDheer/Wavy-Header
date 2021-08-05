@@ -1,0 +1,148 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    box-sizing: border-box;
+}
+body { background: rgb(53, 150, 240); }
+
+nav { 
+    width: 70px;
+ }
+
+nav ul .nav-item {
+    cursor: pointer;
+    width: 100%;
+    height: 70px;
+    background: #fff;
+    color: #cacaca;
+    font-size: 26px;
+    text-align: center;
+    line-height: 70px;
+    transform: rotateY(-90deg);
+    transform-origin: right;
+    margin-left: -70px;
+    transition: .4s
+}
+
+nav ul .nav-item:hover i {
+    transform: scale(1.2);
+    color: rgb(53, 150, 240);
+    transition: .3s;
+}
+
+nav ul .nav-item:nth-child(1) {
+    transform: inherit;
+    color: rgb(53, 150, 240);
+    font-size: 36px;
+    margin-left: 0;
+    border-bottom-right-radius: 15px;
+}
+
+input:checked ~ nav ul .nav-item:nth-child(1) {
+    border-bottom-right-radius: 0px;
+}
+
+input { display: none; }
+
+input:checked ~ nav ul .nav-item:nth-child(1) i { transform: rotate(180deg); }
+
+input:checked ~ nav ul .nav-item:nth-child(2) { transition-delay: .1s }
+
+input:checked ~ nav ul .nav-item:nth-child(3) { transition-delay: .4s }
+
+input:checked ~ nav ul .nav-item:nth-child(4) { transition-delay: .7s }
+
+input:checked ~ nav ul .nav-item:nth-child(5) { transition-delay: 1s }
+
+input:checked ~ nav ul .nav-item:nth-child(6) {
+    transition-delay: 1.3s;
+    border-bottom-right-radius: 15px;
+}
+
+input:checked ~ nav ul .nav-item {
+    margin-left: 0;
+    transform: rotateY(0deg);
+}
+
+.content{
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 20px;
+    text-transform: capitalize;
+    text-align: center;
+    font-family: cursive;
+    color: seashell;
+}
+
+.content a{
+    color: seashell;
+    text-decoration: none;
+}
+
+.header span{
+    color: rgb(211, 28, 15);
+}
+
+p{
+    margin-top: 16px;
+    color: whitesmoke;
+}
+
+svg{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.container{
+    display: flex;
+    width: 28%;
+    justify-content: space-between;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.container a{
+    position: relative;
+    text-decoration: none;
+    width: 80px;
+    height: 80px;
+    border-radius: 28px;
+    box-shadow: -4px -4px 3px 0 rgba(49, 125, 196, 0.7), 
+                inset -2px -2px 2px 0 rgba(180, 194, 218, 0.3);
+    transition: all .3s;
+}
+
+.container i{
+    font-size: 37px;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+a:hover{
+    box-shadow: 4px 4px 3px 0 rgba(49, 125, 196, 1), 
+                inset 2px 2px 2px 0 rgba(180, 194, 218, 0.3);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
